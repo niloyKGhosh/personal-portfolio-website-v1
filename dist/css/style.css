@@ -1,0 +1,243 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.text-size {
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    display: inline-block;
+}
+
+.border-bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: #d3870c;
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+}
+
+.text-alignment {
+    text-align: center;
+}
+
+.padding-content {
+    padding: 3rem;
+}
+
+.headings {
+    font-size: 25px;
+}
+
+#green-text {
+    color: #1dd1a1;
+    font-weight: bold;
+}
+
+#red-text {
+    color: #ee5253;
+    font-weight: bold;
+}
+
+/* Section A: Nav-bar */
+#nav-bar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.ul-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.ul-nav li a {
+    color: #fff;
+    padding: 16px 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.ul-nav li a:hover {
+    color: #d3870c;
+    cursor: pointer;
+}
+
+/* Section A: Nav-bar-header-content */
+#header-content {
+    color: #fff;
+    padding-top: 12%;
+}
+
+#hello-world {
+    padding: 12px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#my-name {
+    padding: 20px;
+    font-size: 60px;
+}
+
+#welcome-tag {
+    font-size: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#more-about-me {
+    border-radius: 50px;
+    border-color: #adaba7;
+    padding: 15px 30px;
+    margin-top: 60px;
+    transition: 0.7s;
+    border: 3px solid #adaba7;
+    font-size: 19px;
+}
+
+#more-about-me:hover {
+    border-color: #d3870c;
+}
+
+#hello {
+    color: #d3870c;
+}
+
+/* Section B: About Me */
+#about-me {
+    padding-top: 30px;
+}
+
+#about-me-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-box img {
+    display: block;
+    width: 500px;
+    height: 250px;
+    padding-right: 50px;
+    border-right: 1px solid #d3870c;
+}
+
+#about-me-description {
+    padding: 55px;
+}
+
+/*Section C: Resume*/
+
+#resume {
+    background-color: #ecf0f1;
+}
+
+#resume-description {
+    padding: 40px;
+}
+
+#skills-projects {
+    padding-top: 50px;
+    font-weight: bold;
+    color: #888888;
+}
+
+#resume-box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.box-background {
+    background-color: #fff;
+    height: 50vh;
+    border-radius: 20px;
+    width: 50vh;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-heading {
+    padding: 10px;
+}
+
+.icon {
+    color: #ffb142;
+    margin: 10px;
+}
+
+.edu-info p {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.edu-info-headings {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.border-bottom-line-info {
+    height: 2px;
+    width: 3rem;
+    background: #ffb142;
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.edu-info-description {
+    padding-top: 10px;
+    font-size: 17px;
+}
+.dates {
+    color: #888888;
+    padding: 3px;
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+}
+
+#minor-math {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.my-resume {
+    margin-top: 50px;
+}
+
+.my-resume a {
+    margin: 50px 10px;
+    padding: 15px 30px ;
+    font-size: 19px;
+    background: #282e36;
+    border-radius: 50px;
+    border: none;
+}
