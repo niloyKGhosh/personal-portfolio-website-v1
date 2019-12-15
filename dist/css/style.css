@@ -9,8 +9,9 @@
     max-width: 1280px;
     padding: 0 1.5rem;
     margin: auto;
-    overflow: hidden;
     font-family: 'Fira Sans', sans-serif;
+    overflow: hidden;
+
 }
 
 .text-size {
@@ -84,7 +85,16 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: 3rem;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    z-index: 100;
+    background: #282e36;
 }
 
 .ul-nav li a {
