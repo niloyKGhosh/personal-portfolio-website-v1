@@ -34,6 +34,14 @@ a {
     margin: 0.5rem auto 1rem auto;
 }
 
+.border-bottom-line-info {
+    height: 2.5px;
+    width: 3rem;
+    background: #ffb142;
+    display: block;
+    margin: 10px 0 5px 20px;
+}
+
 .text-alignment {
     text-align: center;
 }
@@ -56,6 +64,11 @@ a {
     font-weight: bold;
 }
 
+.icon {
+    color: #ffb142;
+    margin: 10px;
+}
+
 /* Section A: Nav-bar */
 #nav-bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpeg");
@@ -71,7 +84,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    margin-top: 2rem;
 }
 
 .ul-nav li a {
@@ -86,6 +99,7 @@ a {
     color: #d3870c;
     cursor: pointer;
 }
+
 
 /* Section A: Nav-bar-header-content */
 #header-content {
@@ -130,7 +144,7 @@ a {
 
 /* Section B: About Me */
 #about-me {
-    padding-top: 30px;
+    padding: 30px 0px;
 }
 
 #about-me-box {
@@ -182,37 +196,23 @@ a {
 }
 
 .section-heading {
-    padding: 10px;
+    padding: 20px;
 }
 
-.icon {
-    color: #ffb142;
-    margin: 10px;
-}
-
-.edu-info p {
+/* Education */
+.resume-info p {
     text-align: left;
     padding-left: 20px;
 }
 
-.edu-info-headings {
+.resume-info-headings {
     font-size: 16px;
     font-weight: bold;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-.border-bottom-line-info {
-    height: 2px;
-    width: 3rem;
-    background: #ffb142;
-    display: block;
-    margin: 0.5rem auto 1rem auto;
-    margin-left: 20px;
-    margin-bottom: 0;
-}
-
-.edu-info-description {
+.resume-info-description {
     padding-top: 10px;
     font-size: 17px;
 }
@@ -240,4 +240,97 @@ a {
     background: #282e36;
     border-radius: 50px;
     border: none;
+     transition: 0.7s;
+}
+
+.my-resume a:hover {
+    background-color: #525151;
+   
+}
+
+/* Section C: Projects*/
+
+/* Section D: Contact*/
+
+#contact-me-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+.contact-me-headings {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.contact-me-buttons {
+    color: #282e36;
+    font-size: 17px;
+}
+
+#icon-mail {
+    color: #e74c3c;
+    
+
+}
+
+#icon-linkedIn {
+    color: #2980b9;
+}
+
+/* Section E: Footer */
+#footer {
+    background-color: #282e36;
+    max-height: 8rem;
+    color: #fff;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+#copyright {
+    font-size: 19px;
+}
+
+.social-icon {
+    margin-right: 2rem;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#github-icon {
+    color: #10ac84;
+}
+
+#github-icon:hover {
+    color: #1dd1a1;
+}
+
+#twitter-icon {
+    color: #0abde3;
+}
+
+#twitter-icon:hover {
+    color: #48dbfb;
+}
+
+#instagram-icon {
+    color: #ee5253;
+}
+
+#instagram-icon:hover {
+    color: #ff6b6b;
+}
+
+#snapchat-icon {
+    color: #feca57;
+}
+
+#snapchat-icon:hover {
+    color: #ffd477;
 }
