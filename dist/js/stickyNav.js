@@ -1,7 +1,7 @@
 function stickyNavigation () {
     const about = document.querySelector('.about-fade');
     const navBar = document.querySelector('.ul-nav');
-    const stickyNavPos = about.offsetTop;
+    const stickyNavPos = about.offsetTop - 100; // Subtracted 100 for appearing early
 
     if (window.scrollY >= stickyNavPos) {
         navBar.classList.add('sticky-nav');
