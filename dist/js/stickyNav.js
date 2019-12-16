@@ -1,4 +1,16 @@
-$(document).ready( function() {
+function stickyNavigation () {
+    const about = document.querySelector('.about-fade');
+    const navBar = document.querySelector('.ul-nav');
+    const stickyNavPos = about.offsetTop;
 
-    
-});
+    if (window.scrollY >= stickyNavPos) {
+        navBar.classList.add('sticky-nav');
+        navBar.style.padding = '1rem';
+    } else {
+        navBar.classList.remove('sticky-nav');
+        navBar.style.padding = '3rem';
+    }
+
+}
+
+window.addEventListener('scroll', stickyNavigation);

@@ -83,6 +83,19 @@ a {
     transform: translateY(0px);
 }
 
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #282e36;
+}
+
+.sticky-nav li:last-child {
+    margin-right: 10rem;
+}
+
 /* Section A: Nav-bar */
 #nav-bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpeg");
@@ -97,16 +110,8 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-top: 3rem;
-}
-
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 85%;
-    z-index: 100;
-    background: #282e36;
+    padding: 3rem 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .ul-nav li a {
