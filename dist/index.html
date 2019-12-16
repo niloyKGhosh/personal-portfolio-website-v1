@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0f4f4bd934.js" crossorigin="anonymous"></script>
     <title>Niloy Ghosh</title>
 </head>
 
@@ -17,7 +16,7 @@
             <nav>
                 <ul class="ul-nav">
                     <li> <a href="#nav-bar">Home</a> </li>
-                    <li> <a href="#about-me">About</a> </li>
+                    <li> <a href="#about">About</a> </li>
                     <li> <a href="#resume">Skills</a> </li>
                     <li><a href="./resume/NiloyKumarGhoshResume.pdf" target="_blank">Resume</a></li>
                     <li> <a href="#contact">Contact</a> </li>
@@ -31,28 +30,28 @@
                 <h1 id="my-name">I'm Niloy Ghosh</h1>
                 <p id="welcome-tag">Welcome to my Website</p>
 
-                <a class="btn" id="more-about-me" href="#about-me">More About Me</a>
+                <a class="btn" id="more-about-me" href="#about">More About Me</a>
             </div>
 
         </div>
     </header>
     <!-- Section B: About Me -->
-    <section id="about-me" class="text-alignment">
-        <div class="container padding-content">
+    <section class="about-fade text-alignment" id="about">
+        <div class="container" id="about-whole-content">
             <h1 class="headings">About Me</h1>
             <div class="border-bottom-line"></div>
             <div id="about-me-box">
                 <img src="./img/about-me.jpeg" alt="about-me-profile-photo">
                 <div id="about-me-description" class="text-size">
-                    <p>Fascinated by technology, I have discovered my passion for <span id="green-text">programming</span> while I was in Grade 11.</p>
-                    <p>Since then, I have developed an enthusiasm to solve tough technical challenges through <span id="red-text">coding.</span></p>
+                    <p>Fascinated by technology, I have discovered my passion for <span id="green-text">programming</span> while I was in Grade 11.
+                    Since then, I have developed an enthusiasm to solve tough technical challenges through <span id="red-text">coding.</span></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section C: Resume -->
-    <section id="resume" class="text-alignment">
+    <section id="resume" class="resume-fade text-alignment">
         <div class="container padding-content">
             <h1 class="headings">What do I do?</h1>
             <div class="border-bottom-line"></div>
@@ -167,7 +166,7 @@
     </section> -->
 
     <!-- Section D: contact -->
-    <section id="contact" class="text-alignment">
+    <section id="contact" class="contact-fade text-alignment">
         <div class="container padding-content">
             <h1 class="headings">Contact Me</h1>
             <div class="border-bottom-line"></div>
@@ -209,7 +208,9 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/contentFade.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/0f4f4bd934.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

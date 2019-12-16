@@ -70,6 +70,14 @@ a {
     margin: 10px;
 }
 
+.about-fade,
+.resume-fade,
+.contact-fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.7s all ease-in;
+}
+
 /* Section A: Nav-bar */
 #nav-bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpeg");
@@ -78,7 +86,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    
 }
 
 .ul-nav {
@@ -153,10 +160,19 @@ a {
 }
 
 /* Section B: About Me */
-#about-me {
-    padding: 30px 0px;
+
+#about {
+    height: 100vh;
 }
 
+.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#about-whole-content {
+   padding: 10rem 0;
+}
 #about-me-box {
     display: flex;
     justify-content: center;
@@ -173,6 +189,10 @@ a {
 
 #about-me-description {
     padding: 55px;
+}
+
+#about-me-description p {
+    text-align: left;
 }
 
 /*Section C: Resume*/
