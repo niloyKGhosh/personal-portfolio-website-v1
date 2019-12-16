@@ -48,7 +48,7 @@ a {
 }
 
 .padding-content {
-    padding: 3rem;
+    padding: 5rem 0;
 }
 
 .headings {
@@ -75,7 +75,12 @@ a {
 .contact-fade {
     opacity: 0;
     transform: translateY(50px);
-    transition: 0.7s all ease-in;
+    transition: 0.7s all ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 /* Section A: Nav-bar */
@@ -165,14 +170,10 @@ a {
     height: 100vh;
 }
 
-.fade-in {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 #about-whole-content {
    padding: 10rem 0;
 }
+
 #about-me-box {
     display: flex;
     justify-content: center;
@@ -281,7 +282,9 @@ a {
 /* Section C: Projects*/
 
 /* Section D: Contact*/
-
+#contact {
+    height: 50vh;
+}
 #contact-me-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
