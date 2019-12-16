@@ -10,6 +10,9 @@ function stickyNavigation () {
         navBar.classList.remove('sticky-nav');
         navBar.style.paddingTop = '3rem';
         navBar.style.paddingBottom = '3rem';
+        navBar.style.paddingRight = '0';
+        navBar.style.paddingLeft = '0';
+
     }
 
 }
