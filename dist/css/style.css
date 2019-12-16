@@ -72,7 +72,8 @@ a {
 
 .about-fade,
 .resume-fade,
-.contact-fade {
+.contact-fade,
+.navigation {
     opacity: 0;
     transform: translateY(50px);
     transition: 0.7s all ease-out;

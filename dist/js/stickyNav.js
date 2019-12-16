@@ -8,7 +8,8 @@ function stickyNavigation () {
         navBar.style.padding = '1rem';
     } else {
         navBar.classList.remove('sticky-nav');
-        navBar.style.padding = '3rem';
+        navBar.style.paddingTop = '3rem';
+        navBar.style.paddingBottom = '3rem';
     }
 
 }

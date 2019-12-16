@@ -12,4 +12,5 @@ window.addEventListener('scroll', () => {
     contentFadeIn('.about-fade');
     contentFadeIn('.resume-fade');
     contentFadeIn('.contact-fade');
-  });
+});
+
