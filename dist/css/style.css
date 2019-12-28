@@ -3,13 +3,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .container {
     max-width: 1280px;
     padding: 0 1.5rem;
-    margin: auto;
-    font-family: 'Fira Sans', sans-serif;
+    margin: 0 auto;
     overflow: hidden;
 
 }
@@ -48,7 +48,7 @@ a {
 }
 
 .padding-content {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
 }
 
 .headings {
@@ -72,29 +72,15 @@ a {
 
 .about-fade,
 .resume-fade,
-.contact-fade,
-.navigation {
+.contact-fade {
     opacity: 0;
     transform: translateY(50px);
-    transition: 0.7s all ease-out;
+    transition: 0.5s all ease-in;
 }
 
 .fade-in {
     opacity: 1;
     transform: translateY(0px);
-}
-
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: #282e36;
-}
-
-.sticky-nav li:last-child {
-    margin-right: 10rem;
 }
 
 /* Section A: Nav-bar */
@@ -111,8 +97,8 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding: 3rem 0;
-    transition: all 0.3s ease-in-out;
+    padding: 1.7rem 3rem;
+    transition: all 0.3s ease-in;
 }
 
 .ul-nav li a {
@@ -132,7 +118,7 @@ a {
 /* Section A: Nav-bar-header-content */
 #header-content {
     color: #fff;
-    padding-top: 12%;
+    padding-top: 8%;
 }
 
 #hello-world {
@@ -209,11 +195,11 @@ a {
 }
 
 #resume-description {
-    padding: 40px;
+    padding: 30px;
 }
 
 #skills-projects {
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: bold;
     color: #888888;
 }
@@ -221,15 +207,14 @@ a {
 #resume-box-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    column-gap: 2rem;
 }
 
 .box-background {
     background-color: #fff;
     height: 50vh;
     border-radius: 20px;
-    width: 50vh;
-    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
 .section-heading {
@@ -277,7 +262,7 @@ a {
     background: #282e36;
     border-radius: 50px;
     border: none;
-     transition: 0.7s;
+    transition: 0.7s;
 }
 
 .my-resume a:hover {
@@ -311,8 +296,6 @@ a {
 
 #icon-mail {
     color: #e74c3c;
-    
-
 }
 
 #icon-linkedIn {
@@ -372,4 +355,14 @@ a {
 
 #snapchat-icon:hover {
     color: #ffd477;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(40,46,54, 0.97);
+    padding: 1.7rem 3rem;
 }
