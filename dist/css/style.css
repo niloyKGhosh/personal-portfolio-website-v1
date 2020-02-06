@@ -84,6 +84,7 @@ a {
 }
 
 /* Section A: Nav-bar */
+
 #nav-bar {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background.jpeg");
     background-attachment: fixed;
@@ -92,13 +93,13 @@ a {
     background-repeat: no-repeat;
     height: 100vh;
 }
-
+.nav-placeholder {
+    padding: 1.7rem 3rem;
+}
 .ul-nav {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 3rem;
-    transition: all 0.3s ease-in;
 }
 
 .ul-nav li a {
@@ -357,12 +358,15 @@ a {
     color: #ffd477;
 }
 
+
 .sticky-nav {
+    padding: 1.7rem 3rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background: rgba(40,46,54, 0.97);
-    padding: 1.7rem 3rem;
+    background: rgba(0,0,0,.8);
+    
 }
+
