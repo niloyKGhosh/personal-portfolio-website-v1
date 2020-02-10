@@ -94,6 +94,7 @@ a {
     height: 100vh;
 }
 .nav-placeholder {
+    
     padding: 1.7rem 3rem;
 }
 .ul-nav {
@@ -104,7 +105,7 @@ a {
 
 .ul-nav li a {
     color: #fff;
-    padding: 16px 24px;
+    padding: 0 24px;
     font-size: 18px;
     text-transform: uppercase;
     transition: all 0.5s;
@@ -360,13 +361,17 @@ a {
 
 
 .sticky-nav {
+    background-color: #1b1d1e;
+    transition: 0.5s;
+    transition-property: background-color;
+    transition-timing-function: ease-out;
     padding: 1.7rem 3rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background: rgba(0,0,0,.8);
+    
     
 }
 
